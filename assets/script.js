@@ -2,20 +2,38 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-let employeesArray = [];
-// console.log(employeesArray)
+// let employeesArray = [];
+// // console.log(employeesArray)
 
-const collectEmployees = function(employeesArray) {
+// const collectEmployees = function(employeesArray) {
   
 
-  let employeeFirst = (prompt('Please enter the employees first name'))
-  let employeeLast = prompt('Please enter the employees last name')
-  let employeeSalary = prompt('Please enter the employees salary')
-  employeesArray.push(employeeFirst)
-        // displayEmployees();
-        console.log(employeesArray);
-      }
-      
+//   let employeeFirst = (prompt('Please enter the employees first name'))
+//   let employeeLast = prompt('Please enter the employees last name')
+//   let employeeSalary = prompt('Please enter the employees salary')
+//   employeesArray.push()
+//         // displayEmployees();
+//         console.log(employeesArray);
+//       }
+const collectEmployees = function() {
+  let askAgain = true;
+  let employeesArray = [];
+  while (askAgain) {
+    let first = window.prompt('Please enter the employees first name');
+    let last = window.prompt('Please enter the employees last name');
+    let sal = window.prompt("Please enter the employees salary")
+  
+    let employee = {
+      firstName: first,
+      lastName: last,
+      salary: sal
+    }
+    employeesArray.push(employee);
+    askAgain = window.confirm('Would you like to add another employee to the list?')
+  }
+  return employeesArray;
+  console.log(employeesArray);
+}
 
 
 
