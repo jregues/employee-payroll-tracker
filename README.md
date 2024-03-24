@@ -16,3 +16,10 @@ WHEN I choose to continue
 THEN I am prompted to add a new employee
 WHEN I choose to cancel
 THEN my employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data
+
+## How to Use
+Click on the 'Add Employees' button to enter a list of employees' first and last name, and their salary
+Watch the table fill with the employees and their salaries
+Open the console to see an employee pciked at random as well as the average salary
+
+## Screensehots
